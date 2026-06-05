@@ -6,7 +6,7 @@ SimpleEquity is a local Windows app for tracking portfolios, holdings, dividends
 
 Download the latest version from the Releases page:
 
-[Download SimpleEquity](../../releases/latest)
+[Download SimpleEquity](../../releases/tag/v1.0.0)
 
 ## How to use
 
