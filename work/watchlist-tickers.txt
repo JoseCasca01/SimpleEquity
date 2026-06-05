@@ -1,0 +1,2 @@
+# Updated by the SimpleEquity desktop app.
+# Extra watchlist tickers for the automatic importer.

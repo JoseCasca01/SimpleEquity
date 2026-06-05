@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SimpleEquity</title>
+    <link rel="icon" type="image/x-icon" href="./assets/simpleequity.ico?v=20260605-app-icon-1" />
+    <link rel="apple-touch-icon" href="./assets/simpleequity-logo.png?v=20260605-app-icon-1" />
+    <link rel="stylesheet" href="./styles.css?v=20260604-desktop-app-1" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">SE</div>
+          <div>
+            <strong>SimpleEquity</strong>
+            <span>Investment dashboard</span>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Views">
+          <button class="nav-button is-active" data-view="dashboard">Dashboard</button>
+          <button class="nav-button" data-view="portfolios">Portfolios</button>
+          <button class="nav-button" data-view="capital">Capital</button>
+          <button class="nav-button" data-view="holdings">Holdings</button>
+          <button class="nav-button" data-view="watchlist">Watchlist</button>
+          <button class="nav-button" data-view="investments">Investments</button>
+          <button class="nav-button" data-view="dividends">Dividends</button>
+          <button class="nav-button" data-view="earnings">Earnings</button>
+          <button class="nav-button" data-view="valuation">DCF</button>
+          <button class="nav-button" data-view="missing">Missing years</button>
+        </nav>
+        <div class="sidebar-meta" id="sourceMeta"></div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 id="viewTitle">SimpleEquity</h1>
+            <p id="viewSubtitle"></p>
+          </div>
+          <div class="segmented" aria-label="Currency">
+            <button class="is-active" data-currency="USD">$</button>
+            <button data-currency="EUR">EUR</button>
+          </div>
+        </header>
+        <section id="app" class="view" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./earnings-data.js"></script>
+    <script src="./fundamentals-data.js"></script>
+    <script src="./imports-data.js"></script>
+    <script src="./prices-data.js?v=20260604-desktop-app-1"></script>
+    <script src="./automation.js?v=20260604-desktop-app-1"></script>
+  </body>
+</html>
